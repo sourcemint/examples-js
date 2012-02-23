@@ -9,6 +9,7 @@
         "sourcemint-platform-nodejs": "0.x",
         "zombie": "0.x",
         "q": "0.x",
+        "n-util": "0.x",
         "connect": "1.x"
     },
     "scripts": {
