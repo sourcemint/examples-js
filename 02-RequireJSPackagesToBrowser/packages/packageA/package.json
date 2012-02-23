@@ -1,0 +1,18 @@
+{
+    "mappings": {
+        "package": "../packageB"
+    },
+    "config": {
+        "github.com/sourcemint/bundler-js/0/-meta/config/0": {
+            "adapter": "github.com/sourcemint/sdk-requirejs/0",
+            "resolvers": {
+                "/logger.js": [
+                    "./logger/console.js"
+                ]
+            },
+            "resources": [
+                "./logger/*.json"
+            ]
+        }
+    }
+}

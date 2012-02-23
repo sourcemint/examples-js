@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="loader.js"></script>
+        <script type="text/javascript">
+            require.sandbox("packages/boot.js", function(sandbox)
+            {
+                sandbox.main();
+            });
+        </script>
+    </head>
+    <body>
+        <p>Check your browser's console for 'console.log()' messages!</p>
+    </body>
+</html>
