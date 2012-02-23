@@ -37,7 +37,7 @@ For each example in `./examples` run the following:
 Tests
 -----
 
-Run all examples as tests from the command-line.
+Run all examples as tests from the command-line (this may take a while):
 
     npm install
     npm test
