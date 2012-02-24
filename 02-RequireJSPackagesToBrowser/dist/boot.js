@@ -60,20 +60,24 @@ require.bundle("", function(require)
             });
         }
     }));
-    require.memoize("7c6ac439eb93e47d1c182c68092caf4ae323c5c4/words/hello.js", define('',['require','exports','module','package/greetings','letters/H'],function(require, exports, module)
+    require.memoize("7c6ac439eb93e47d1c182c68092caf4ae323c5c4/words/hello.js", function(require, exports, module)
     {
+        var __filename = require.sandbox.id + "7c6ac439eb93e47d1c182c68092caf4ae323c5c4/words/hello.js";
+        var __dirname = require.sandbox.id + "/7c6ac439eb93e47d1c182c68092caf4ae323c5c4/words";
+        
         var GREETINGS = require("package/greetings");
-    
+        
         exports.getWord = function()
         {
             return require("letters/H").getLetter() + "ello";
         }
-    
+        
         exports.getName = function()
         {
             return GREETINGS.getName();
         }
-    }));
+        
+    });
     require.memoize("108cbe849fb3dc44e8a21940a3ba536c0b08aa74/H.js", define('',['require','exports','module'],function(require, exports, module)
     {
         // TODO: Allow mapping a global to a package alias in package.json.
