@@ -1,15 +1,12 @@
 
-define(function(require, exports, module)
+var GREETINGS = require("package/greetings");
+
+exports.getWord = function()
 {
-    var GREETINGS = require("package/greetings");
+    return require("letters/H").getLetter() + "ello";
+}
 
-    exports.getWord = function()
-    {
-        return require("letters/H").getLetter() + "ello";
-    }
-
-    exports.getName = function()
-    {
-        return GREETINGS.getName();
-    }
-});
+exports.getName = function()
+{
+    return GREETINGS.getName();
+}

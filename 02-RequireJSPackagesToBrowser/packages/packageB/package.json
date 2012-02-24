@@ -5,5 +5,10 @@
     },
     "directories": {
         "lib": "words"
+    },
+    "config": {
+        "github.com/sourcemint/bundler-js/0/-meta/config/0": {
+            "adapter": "github.com/sourcemint/platform-nodejs/0"
+        }
     }
 }
