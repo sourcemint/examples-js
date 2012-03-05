@@ -1,4 +1,5 @@
 {
+    "private": true,
     "name": "sourcemint-examples-js-02-RequireJSPackagesToBrowser",
     "version": "0.1.0",
     "engines": {

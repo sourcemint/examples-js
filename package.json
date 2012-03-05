@@ -1,4 +1,5 @@
 {
+    "private": true,
     "name": "sourcemint-examples-js",
     "version": "0.1.1",
     "engines": {
