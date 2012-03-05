@@ -13,19 +13,11 @@ exports.main = function(onReadyDeferred, options)
         app.get(/^\/$/, CONNECT.static(__dirname));
 
         app.get(/^\/loader.js/, CONNECT.static(PATH.dirname(require.resolve("sourcemint-loader-js/loader.js"))));
-        
-        app.get(/^(\/modules)(\.js)?(\/(.*))?$/, function (req, res)
-        {
-            var modulesPath = __dirname + "/" + req.params[0];
 
-            // TODO: Maybe we can do without this.
-            req.url = req.url.substring(10 + req.params[0].length + (req.params[1] || "").length);
-
-            // TODO: Make this `connect` compatible.
-            BUNDLER.Middleware(modulesPath, __dirname + "/dist", {
-                packageIdHashSeed: "__EXAMPLE__"
-            }).handle(req, res);
-        });
+        app.get(/^\/modules(?:\.js)?(\/.*)?$/, BUNDLER.hoist(__dirname + "/modules", {
+            distributionBasePath: __dirname + "/dist",
+            packageIdHashSeed: "__EXAMPLE__"
+        }));
     }));
 
     /*TEST*/ if (onReadyDeferred) {
