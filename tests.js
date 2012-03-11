@@ -25,7 +25,8 @@ if (require.main === module) {
         {
             var exampleBasePath = basePath + "/" + filename;
 
-            if (PATH.existsSync(exampleBasePath + "/package.json"))
+            if (PATH.existsSync(exampleBasePath + "/package.json") &&
+                PATH.existsSync(exampleBasePath + "/test.js"))
             {
                 done = Q.when(done, function()
                 {

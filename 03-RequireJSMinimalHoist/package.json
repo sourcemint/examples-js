@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "name": "sourcemint-examples-js-03-RequireJSMinimalHoist",
+    "version": "0.1.0",
+    "engines": {
+        "nodejs": "0.x"
+    },
+    "dependencies": {
+        "sourcemint-platform-nodejs": "0.x"
+    }
+}
