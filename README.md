@@ -28,9 +28,9 @@ Usage
 Examples
 --------
 
-For each example in `./examples` run the following:
+For each example run the following:
 
-    cd ./examples/<Example>
+    cd ./<Example>
     npm install
     node main
 
