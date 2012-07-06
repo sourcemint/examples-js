@@ -5,7 +5,7 @@ require('http').createServer(function (req, res) {
     }
     else if (/^\/ui(\.js$|\/)/.test(req.url)) {
         req.params = [ req.url.match(/^\/ui(?:\.js)?(\/.*)?$/)[1] ];
-        require("sourcemint-platform-nodejs/lib/bundler").hoist(__dirname + "/ui", {
+        require("sourcemint-platform-browser/lib/bundler").hoist(__dirname + "/ui", {
             bundleLoader: true
         })(req, res);
     }

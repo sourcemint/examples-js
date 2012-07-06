@@ -7,7 +7,7 @@
     },
     "dependencies": {
         "connect": "1.x",
-        "sourcemint-platform-nodejs": "0.x",
+        "sourcemint-platform-browser": "0.x",
         "sourcemint-loader-js": "0.x"
     },
     "devDependencies": {

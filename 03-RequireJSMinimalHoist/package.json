@@ -6,6 +6,6 @@
         "nodejs": "0.x"
     },
     "dependencies": {
-        "sourcemint-platform-nodejs": "0.x"
+        "sourcemint-platform-browser": "0.x"
     }
 }
