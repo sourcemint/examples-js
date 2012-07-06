@@ -1,7 +1,7 @@
 {
     "private": true,
     "name": "sourcemint-examples-js",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "pm": "npm",
     "shrinkwrap": true,
     "devDependencies": {
