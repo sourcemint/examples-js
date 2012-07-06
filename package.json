@@ -1,10 +1,8 @@
 {
-    "private": true,
     "name": "sourcemint-examples-js",
     "version": "0.2.0",
-    "engines": {
-        "nodejs": "0.x"
-    },
+    "pm": "npm",
+    "shrinkwrap": true,
     "devDependencies": {
         "sourcemint-loader-js": "0.x",
         "sourcemint-platform-browser": "0.x",
